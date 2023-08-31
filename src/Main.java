@@ -1,4 +1,4 @@
-package TypesOfRides.dpproject;
+package TypesOfRides.src;
 
 import java.util.Scanner;
 
@@ -20,18 +20,23 @@ public class Main {
 
         if (option == 1) {
             if (role.equals("1"))
-                User.login(role);
+                UserCreator.login(role);
             else if (role.equals("2"))
-                Driver.login(role);
-            else if (role.equals("3"))
-                Admin.login();
+                DriverCreator.login(role);
+            else if (role.equals("3") && Admin.loginSuccessfully()){
+                    new Admin();
+            }
             else
+            {
+                System.out.println("Invalid Data!");
                 continue;
+            }
+
         } else if (option == 2) {
             if (role.equals("1"))
-                User.createUser(role);
+                UserCreator.createUser(role);
             else if (role.equals("2"))
-                Driver.createDriver(role);
+                DriverCreator.createDriver(role);
             else
                 continue;
         }
