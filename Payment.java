@@ -1,6 +1,6 @@
 package TypesOfRides;
 
-public class Payment {
+public abstract class Payment {
     private double amount;
     private String currency;
     private String paymentType;
@@ -8,7 +8,7 @@ public class Payment {
     public Payment(double amount, String currency, String paymentType) {
         this.amount = amount;
         this.currency = currency;
-        this.paymentType = paymentType;
+        this.paymentType = PaymentType();
     }
 
     public double getAmount() {
@@ -19,7 +19,5 @@ public class Payment {
         return currency;
     }
 
-    public String getPaymentType() {
-        return paymentType;
-    }
+   public abstract String PaymentType();
 }
