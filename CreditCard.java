@@ -1,23 +1,17 @@
-package TypesOfRides;
+public class CreditCard implements PaymentStrategy{
 
-import java.util.Date;
+    String CardNumber;
+    String cvv;
+    String expDate;
 
-public class CreditCard extends Payment{
-
-    private long CardNumber;
-    private int CVV;
-    private Date ExpDate;
-
-    public CreditCard(double amount, String currency, String PaymentType, long CardNumber, int CVV,Date ExpDate) {
-        super(amount, currency, PaymentType);
-        this.CardNumber = CardNumber;
-        this.CVV        = CVV;
-        this.ExpDate    = ExpDate;
+    public CreditCard(String cardNumber, String cvv, String expDate) {
+        CardNumber = cardNumber;
+        this.cvv = cvv;
+        this.expDate = expDate;
     }
 
-
-    public String PaymentType(){
-        return "Credit Card";
+    @Override
+    public String processPayment(int amount, String currency) {
+        return "pay with credit card " + amount + " in " + currency;
     }
-
 }
