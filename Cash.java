@@ -1,17 +1,7 @@
-package TypesOfRides;
-
-import java.util.Date;
-
-public class Cash extends Payment{
-
-    public Cash(double amount, String currency,String PaymentType) {
-        super(amount, currency, PaymentType);
-    }
+public class Cash implements PaymentStrategy{
 
     @Override
-    public String PaymentType() {
-        return "Cash";
+    public String processPayment(int amount, String currency) {
+        return "pay with Cash " + amount + "in " + currency;
     }
-
-
 }
