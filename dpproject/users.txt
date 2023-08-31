@@ -1,5 +1,0 @@
-3	admin	admin_pass
-1	Lojain	Essam	8451	456852
-2	Ahmed	Mohammed	k110	75698984	hjk4122	ch784512
-1	Hajer	Essam	456	123
-1	kai	kim	000	8965431
