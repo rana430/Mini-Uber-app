@@ -32,6 +32,10 @@ public class CalcDistance {
         dijkstra.calculateShortestPath(adj, source);
 
         int minDistance = dijkstra.getShortestDistance(destination);
+        public int getDistance()
+            {
+                return minDistance;
+            }
         if (minDistance != Integer.MAX_VALUE) {
             System.out.println("The shortest distance from node " + source + " to node " + destination + " is " + minDistance);
             CalcPrice calculatePrice=new CalcPrice();
