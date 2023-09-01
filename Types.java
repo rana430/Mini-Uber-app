@@ -1,5 +1,3 @@
-package TypesOfRides;
-
  public class Types {
     private Description description;
     public void setTypes ( Description description)

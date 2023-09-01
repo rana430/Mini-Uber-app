@@ -1,5 +1,3 @@
-package TypesOfRides;
-
 public class PremiumDescription implements Description{
     public void description(double price)
     {

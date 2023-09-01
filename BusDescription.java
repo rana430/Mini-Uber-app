@@ -1,5 +1,3 @@
-package TypesOfRides;
-
 public class BusDescription implements Description{
     @Override
     public void description(double price) {

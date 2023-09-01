@@ -5,6 +5,7 @@ public class Dijkstra {
     private int dist[];
     private Set<Integer> settled;
     private PriorityQueue<Node> pq;
+
     private int V;
     private List<List<Node>> adj;
 

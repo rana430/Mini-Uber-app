@@ -1,0 +1,4 @@
+0	o	u	kl
+1	c	v	hagaressam
+3	cairo	giza	hagaressam
+4	abbaseya	cairo	hagaressam

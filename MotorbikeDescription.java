@@ -1,5 +1,3 @@
-package TypesOfRides;
-
 public class MotorbikeDescription implements Description{
     @Override
     public void description(double price) {

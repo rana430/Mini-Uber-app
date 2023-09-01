@@ -3,10 +3,12 @@ public class RideRequest {
     private String destination;
     private String passengerName;
 
+    public static int requestCounter = 0;
     public RideRequest(String pickupLocation, String destination, String passengerName) {
         this.pickupLocation = pickupLocation;
         this.destination = destination;
         this.passengerName = passengerName;
+        requestCounter++;
     }
 
     public String getPickupLocation() {
