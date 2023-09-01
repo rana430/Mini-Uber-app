@@ -40,6 +40,22 @@ public class User{
                 System.out.println("4- Fayoum\n");
                 System.out.println("5- 6-October\n");
                 int dest = Integer.parseInt(scanner.next());
+                 int payChoice = scanner.nextInt();
+                  switch (payChoice)
+                  {
+                      case 1:
+                          System.out.println(" pls enter Card Number : ");
+                          String cn = scanner.next();
+                          System.out.println(" pls enter CVV : ");
+                          String cvv = scanner.next();
+                          System.out.println("pls enter expiration date : ");
+                          String exp = scanner.next();
+                          CreditCard c = new CreditCard(cn,cvv,exp);
+                          System.out.println(c.processPayment(50,"EGP"));
+                      case 2:
+                          Cash cash = new Cash();
+                          System.out.println(cash.processPayment(50,"EGP"));
+                  }
                 RideRequest rideRequest = new RideRequest(pickupL, dest , this.getUserName());
 
                 try{
