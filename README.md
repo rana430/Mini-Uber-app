@@ -17,3 +17,5 @@ The Mini Uber project is a simplified Java-based implementation of a ride-sharin
 5- Ride Tracking: Users can track the real-time location of their assigned driver as they approach the pickup location.
 
 6- Ride Completion: Once the ride is completed, the system calculates the fare and provides an invoice to the user.
+
+7- Support Ticket: If the user encounter any issues or have questions, open a support ticket.
